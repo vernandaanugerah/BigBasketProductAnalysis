@@ -19,6 +19,7 @@ Select * From bbProducts
 
 The data at first would look like this :
 
+![Pic1](https://user-images.githubusercontent.com/38880564/197454382-0350edaf-77ba-49cc-829a-e11f724a9c89.PNG)
 
 
 There are multiple columns in the data, namely :
