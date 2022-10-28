@@ -14,9 +14,9 @@ We would be using SQL for our main data exploration and Tableau for visualisatio
 
 
 We would be using the SQL Query Below to look at the full data :
-
+```
 Select * From bbProducts
-
+```
 The data at first would look like this :
 
 ![Pic1](https://user-images.githubusercontent.com/38880564/197454382-0350edaf-77ba-49cc-829a-e11f724a9c89.PNG)
