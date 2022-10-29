@@ -112,6 +112,7 @@ The result is as follows :
 One of the other possible information that we could derive from this data is the average market price vs sale price for the top 3 brand with the most product count. This is because these brands with high product counts will be more accessible to the customers due to their variety of products offering. As such finding the information regarding their market price and sale price could be valuable. 
 
 The SQL Query used will use the CTE function along with partitioning as the query will have to rank each brand based on their product count. The query used is as follows : 
+```
 
 With AVG_Market_Sale_Brand AS(
 Select Category,brand, Format(Avg(Market_Price),'N2') AS 'Market_Price', Format(Avg(Sale_Price),'N2') AS 'SALE_PRICE', Count(Brand) as 'Product_Quant', ROW_NUMBER() Over(Partition by Category Order by Count(brand) Desc) as 'Rows' from BBProducts group by category ,brand
@@ -119,6 +120,7 @@ Select Category,brand, Format(Avg(Market_Price),'N2') AS 'Market_Price', Format(
 
 Select Category,brand,Market_Price,SALE_PRICE,Product_Quant from AVG_Market_Sale_Brand where rows = 1 OR rows = 2 OR rows = 3
 
+```
 The result is as follows :
 
 ![AVG Mark Price V SP TOP 3 Brand](https://user-images.githubusercontent.com/38880564/198824061-b681e230-c9bd-4262-a71e-5bd334afdb5c.PNG)
@@ -129,7 +131,9 @@ The result is as follows :
 
 The last possible information that might be useful is the average rating of each category. The data is structured in a way that each of the products will be given a rating from 1-5. By finding out the average rating we can know which category is rated highest or whichever is rated lowest.
 
+```
 The SQL Query used will have to use the Group By Function. It is written as follows :
+```
 
 Select Category, Format(AVG(Rating),'N2') From dbo.BBProducts Group by category order by category
 
