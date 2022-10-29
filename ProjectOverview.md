@@ -155,8 +155,6 @@ The general steps of the tableau visualisation consist of these steps :
 
 These steps are taken due to the limitation of the version of tableau used as tableau public does not allow connection between tableau and SQL Database.
 
-The visualisation can be seen by clicking on the link below 
-
-[Visualisation Link](https://public.tableau.com/app/profile/vernanda.anugerah.putra/viz/BBProductsDashboard/Dashboard1)
+The visualisation can be seen by [here](https://public.tableau.com/app/profile/vernanda.anugerah.putra/viz/BBProductsDashboard/Dashboard1)
 
 
