@@ -1,5 +1,7 @@
 # BigBasketProductAnalysis
 
+## Introduction 
+
 This is a Exploratory Data Analysis of products in Big Basket, a online e-commerce chain based in India. 
 
 This Dataset is based on https://www.kaggle.com/datasets/surajjha101/bigbasket-entire-product-list-28k-datapoints by Suraj Jha.
@@ -13,6 +15,7 @@ Visualise those insight into readable and digestible charts
 We would be using SQL for our main data exploration and Tableau for visualisation of the result of our exploration. 
 
 
+
 We would be using the SQL Query Below to look at the full data :
 ```
 Select * From bbProducts
@@ -24,16 +27,16 @@ The data at first would look like this :
 
 There are multiple columns in the data, namely :
 
-Index : Index of the product
-Product : Name of the product
-Category : Main category of the Product
-Sub_Category : The Sub Category under the Main Category 
-Brand : The Brand of the product 
-Sale_Price : The Sale Price of the Product
-Market_Price : The Market Price of the Product 
-Type : What type of product it is
-Rating : The rating given to the product
-Description : The description of the product. 
+1. Index : Index of the product
+2. Product : Name of the product
+3. Category : Main category of the Product
+4. Sub_Category : The Sub Category under the Main Category 
+5. Brand : The Brand of the product 
+6. Sale_Price : The Sale Price of the Product
+7. Market_Price : The Market Price of the Product 
+8. Type : What type of product it is
+9. Rating : The rating given to the product
+10. Description : The description of the product. 
 
 
 
