@@ -8,9 +8,9 @@ This Dataset is based on https://www.kaggle.com/datasets/surajjha101/bigbasket-e
 
 There are three main objectives that we want to achieve in this EDA :
 
-Find out the basic structure of the Data ( Categories, Sub_Categories)
-Garner insight based on several data points (Rating, Sale_Price, Market_Price)
-Visualise those insight into readable and digestible charts
+1. Find out the basic structure of the Data ( Categories, Sub_Categories)
+2. Garner insight based on several data points (Rating, Sale_Price, Market_Price)
+3. Visualise those insight into readable and digestible charts
 
 We would be using SQL for our main data exploration and Tableau for visualisation of the result of our exploration. 
 
@@ -57,7 +57,7 @@ By using the SQL Query above, we can figure out all the listed sub category and 
 
 
 
-# Insights
+# General Insights
 
 ## Total Product count per Category 
 
@@ -143,6 +143,20 @@ Select Category, Format(AVG(Rating),'N2') From dbo.BBProducts Group by category 
 ![Rating](https://user-images.githubusercontent.com/38880564/198824065-d722c47f-5ed1-40dc-aa09-5e8ee7ba13ca.PNG)
 
 
+# Visualisation 
 
+With these result and SQL Query in mind, we can start visualising the data and making graph in order to parse the information of the insight in one look. Visualisation will also help communicate our insight to the stakeholder if such project were to be done in a working environmet. Visualisation can be done by using excel but in order to make the visualisation abit more interactive, we can use tableau.
+
+The general steps of the tableau visualisation consist of these steps :
+
+1. Export the SQL query into an excel sheet for ease of organisation
+2. Import the condesed and queried data into tableau
+3. Visualise the data using tableau function
+
+These steps are taken due to the limitation of the version of tableau used as tableau public does not allow connection between tableau and SQL Database.
+
+The visualisation can be seen by clicking on the link below 
+
+Visualisation Link(https://public.tableau.com/app/profile/vernanda.anugerah.putra/viz/BBProductsDashboard/Dashboard1)
 
 
